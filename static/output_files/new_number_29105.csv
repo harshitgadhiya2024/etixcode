@@ -1,0 +1,3 @@
+url,output_link
+https://etix.com/ticket/?search=cat%27s+cradle,http://127.0.0.1:5000/download/requests_log8230.json
+https://etix.com/ticket/?search=mcmenamins+crystal+ballroom,http://127.0.0.1:5000/download/requests_log1975.json
