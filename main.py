@@ -22,8 +22,8 @@ secure_type = "http"
 app.config["already"] = []
 app.config["unique_user"] = []
 
-# server_file_name = "server.log"
-# logging.basicConfig(filename=server_file_name, level=logging.DEBUG)
+server_file_name = "server.log"
+logging.basicConfig(filename=server_file_name, level=logging.DEBUG)
 
 proxy_config = {
     "server": "http://geo.iproyal.com:12321",
@@ -210,4 +210,4 @@ def view_logs():
         return render_template("index.html")
 
 if __name__ == "__main__":
-    app.run()
+    app.run(host="0.0.0.0", port=5000)
