@@ -63,7 +63,7 @@ async def capture_network_requests(url, loop_value, value_min, unique_name):
     async with async_playwright() as p:
         random_user_agent = random.choice(user_agents)
         print(f"Using User-Agent: {random_user_agent}")
-        browser = await p.chromium.launch(headless=False, proxy=proxy_config)
+        browser = await p.chromium.launch(headless=True, proxy=proxy_config)
         context = await browser.new_context(user_agent=random_user_agent)
         page = await context.new_page()
         all_requests = []
