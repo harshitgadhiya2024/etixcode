@@ -13,7 +13,7 @@ RUN pip3 install --no-cache-dir -r requirements.txt
 
 RUN playwright install
 
-EXPOSE 80
+EXPOSE 5000
 
 ENV NAME World
 
